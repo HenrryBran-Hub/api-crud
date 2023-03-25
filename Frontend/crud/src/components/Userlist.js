@@ -26,7 +26,7 @@ const Userlist = ({user, users, setlistUpdated, setlistUpdatedDel}) =>{
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(user)
         }
-        fetch('http://localhost:9000/updateContacto/' + id,requestInit)
+        fetch('http://localhost:9001/updateContacto/' + id,requestInit)
         .then(res => res.json())
         .then(res => console.log(res))
 
@@ -42,7 +42,7 @@ const Userlist = ({user, users, setlistUpdated, setlistUpdatedDel}) =>{
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(user)
         }
-        fetch('http://localhost:9000/deleteContacto/' + Id,requestInit)
+        fetch('http://localhost:9001/deleteContacto/' + Id,requestInit)
         .then(res => res.json())
         .then(res => console.log(res))
 
