@@ -17,7 +17,7 @@ function App() {
 
   useEffect(() => {
     const getUsers = () => {
-      fetch('http://localhost:9000/getContactos')
+      fetch('http://localhost:9001/getContactos')
       .then(res => res.json())
       .then(res => setUsers(res))
     }

@@ -34,7 +34,7 @@ const Form = ({user,setUser}) => {
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(user)
         }
-        fetch('http://localhost:9000/addContacto',requestInit)
+        fetch('http://localhost:9001/addContacto',requestInit)
         .then(res => res.json())
         .then(res => console.log(res))
 

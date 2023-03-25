@@ -7,7 +7,7 @@ const mysqlConnection = require('../database');
 //lista de contactos
 router.get('/getContactos',(req, res) => {
     let consulta = `SELECT *
-    FROM contacto`;
+    FROM Contacto`;
     mysqlConnection.query(consulta, (err, rows, fields) => {
         if (!err){
             res.json(rows);
